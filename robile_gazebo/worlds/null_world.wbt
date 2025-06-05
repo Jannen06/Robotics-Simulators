@@ -5,6 +5,12 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "../protos/Robile.proto"
 
+
+
+EXTERNPROTO "../protos/Rosbot.proto"
+
+
+
 WorldInfo {
   
 }
@@ -22,13 +28,8 @@ RectangleArena {
   wallThickness 20
   wallHeight 100
 }
-Robile {
+
+Rosbot {
+  translation 1.11204 -4.71646 0
   controller "robile_controller"
-  hidden translation_4 0.233 0.1165 0.04890234883401211
-  hidden translation_8 0.233 -0.1165 0.04890234883401211
-  hidden translation_12 0 0.1165 0.04984319505112583
-  hidden translation_13 0 -0.1165 0.04984319505112583
-  hidden translation_14 -0.233 0.1165 0.04890234883401211
-  hidden translation_18 -0.233 -0.1165 0.04890234883401211
-  hidden translation_22 0.45 0 0.2199949822538568
 }

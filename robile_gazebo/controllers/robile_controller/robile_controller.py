@@ -23,8 +23,8 @@ class RobileController(Node):
         self.get_logger().info(f"Robot parameters: Wheel Radius = {self.wheel_radius} m, Wheel Base = {self.wheel_base} m")
 
         self.get_logger().info("Attempting to get motors...")
-        self.left_motor = self.robot.getDevice('robile_1_drive_left_motor')
-        self.right_motor = self.robot.getDevice('robile_1_drive_right_motor')
+        self.left_motor = self.robot.getDevice('front left wheel motor')
+        self.right_motor = self.robot.getDevice('front right wheel motor')
 
         
         if self.left_motor is None:
