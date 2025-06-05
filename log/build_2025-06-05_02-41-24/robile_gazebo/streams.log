@@ -1,0 +1,170 @@
+[0.009s] Invoking command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jannen/Documents/git/Robotics-Simulators/src/robile_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo
+[0.105s] -- The C compiler identification is GNU 11.4.0
+[0.181s] -- The CXX compiler identification is GNU 11.4.0
+[0.188s] -- Detecting C compiler ABI info
+[0.247s] -- Detecting C compiler ABI info - done
+[0.251s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.252s] -- Detecting C compile features
+[0.253s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.314s] -- Detecting CXX compiler ABI info - done
+[0.319s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.319s] -- Detecting CXX compile features
+[0.319s] -- Detecting CXX compile features - done
+[0.324s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.569s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.615s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.638s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.675s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.678s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.686s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.696s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.709s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.751s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.753s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.828s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.850s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.883s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.892s] -- Looking for pthread.h
+[0.954s] -- Looking for pthread.h - found
+[0.955s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.011s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.011s] -- Found Threads: TRUE  
+[1.060s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.060s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[1.061s]   does not match the name of the calling package (gazebo).  This can lead to
+[1.061s]   problems in calling code that expects `find_package` result variables
+[1.061s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.061s] Call Stack (most recent call first):
+[1.061s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[1.061s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[1.061s]   CMakeLists.txt:16 (find_package)
+[1.061s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.061s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.061s] [0m
+[1.061s] -- Checking for module 'bullet>=2.82'
+[1.073s] --   Found bullet, version 3.05
+[1.163s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.203s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.225s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.246s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.263s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.267s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.274s] -- Searching for dependencies of ignition-math6
+[1.275s] -- Looking for OGRE...
+[1.276s] -- OGRE_PREFIX_WATCH changed.
+[1.279s] -- Checking for module 'OGRE'
+[1.290s] --   Found OGRE, version 1.9.0
+[1.318s] -- Found Ogre Ghadamon (1.9.0)
+[1.323s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.329s] -- Looking for OGRE_Paging...
+[1.333s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.333s] -- Looking for OGRE_Terrain...
+[1.337s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.337s] -- Looking for OGRE_Property...
+[1.340s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.340s] -- Looking for OGRE_RTShaderSystem...
+[1.343s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.343s] -- Looking for OGRE_Volume...
+[1.347s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.347s] -- Looking for OGRE_Overlay...
+[1.350s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.415s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.417s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.417s] -- Searching for dependencies of ignition-transport8
+[1.429s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.435s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.439s] -- Checking for module 'libzmq >= 4'
+[1.452s] --   Found libzmq , version 4.3.4
+[1.483s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.490s] -- Checking for module 'uuid'
+[1.500s] --   Found uuid, version 2.37.2
+[1.527s] -- Found UUID: TRUE  
+[1.530s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.530s] -- Searching for dependencies of ignition-msgs5
+[1.545s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.549s] -- Checking for module 'tinyxml2'
+[1.560s] --   Found tinyxml2, version 9.0.0
+[1.590s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.592s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.592s] -- Searching for dependencies of ignition-common3
+[1.592s] -- Looking for dlfcn.h - found
+[1.593s] -- Looking for libdl - found
+[1.594s] -- Found DL: TRUE  
+[1.605s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.605s] -- Searching for <ignition-common3> component [graphics]
+[1.607s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.607s] -- Searching for dependencies of ignition-common3-graphics
+[1.607s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.609s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.610s] -- Searching for dependencies of ignition-fuel_tools4
+[1.680s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.687s] -- Checking for module 'jsoncpp'
+[1.698s] --   Found jsoncpp, version 1.9.5
+[1.725s] -- Found JSONCPP: TRUE  
+[1.732s] -- Checking for module 'libzip'
+[1.744s] --   Found libzip, version 1.7.3
+[1.771s] -- Found ZIP: TRUE  
+[1.771s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.772s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.772s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.780s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.782s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.793s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.808s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.823s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.891s] -- Configuring done
+[1.894s] -- Generating done
+[1.895s] -- Build files have been written to: /home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo
+[1.904s] Invoked command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jannen/Documents/git/Robotics-Simulators/src/robile_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo
+[1.906s] Invoking command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo -- -j22 -l22
+[1.941s] Invoked command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo -- -j22 -l22
+[1.950s] Invoking command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo
+[1.955s] -- Install configuration: ""
+[1.956s] -- Execute custom install script
+[1.956s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/lib/robile_gazebo/robile_controller.py
+[1.962s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//config/doxygen/Doxyfile.in
+[1.969s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//config/rviz/robile.rviz
+[1.976s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_foxy_nav.rviz
+[1.981s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_rolling.rviz
+[1.988s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//launch/gazebo_4_wheel.launch.py
+[1.996s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//launch/robile.launch.py
+[2.002s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//launch/webots_robile_launch.py
+[2.008s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/.null_world.jpg
+[2.016s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/.null_world.wbproj
+[2.024s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/.robile_world.jpg
+[2.029s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/closed_walls.world
+[2.035s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/kelo_drive/kelo_drive_base.dae
+[2.042s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/kelo_drive/kelo_drive_wheel.dae
+[2.048s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/passive_caster_wheel/pivot.dae
+[2.053s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/passive_caster_wheel/wheel.dae
+[2.058s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/general_brick_housing.dae
+[2.063s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/lid.dae
+[2.069s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/lid_cover_blue.dae
+[2.075s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/lid_cover_green.dae
+[2.083s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/lid_cover_red.dae
+[2.089s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/lid_cover_yellow.dae
+[2.095s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/robile_brick_housing/wheeled_brick_housing.dae
+[2.103s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/sensors/hokuyo.dae
+[2.109s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/sensors/hokuyo_convex.dae
+[2.114s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/meshes/sensors/sick-lms1xx.dae
+[2.119s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/null_world.wbt
+[2.125s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/potential_field_gazebo.world
+[2.130s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo//worlds/robile_world.wbt
+[2.136s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/ament_index/resource_index/package_run_dependencies/robile_gazebo
+[2.142s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/ament_index/resource_index/parent_prefix_path/robile_gazebo
+[2.149s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.sh
+[2.155s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.dsv
+[2.161s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/environment/path.sh
+[2.167s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/environment/path.dsv
+[2.172s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/local_setup.bash
+[2.179s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/local_setup.sh
+[2.185s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/local_setup.zsh
+[2.191s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/local_setup.dsv
+[2.197s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/package.dsv
+[2.203s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/ament_index/resource_index/packages/robile_gazebo
+[2.208s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.213s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig.cmake
+[2.220s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig-version.cmake
+[2.227s] -- Symlinking: /home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo/share/robile_gazebo/package.xml
+[2.235s] Invoked command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo

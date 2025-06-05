@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.000482] (webots_sim) JobQueued: {'identifier': 'webots_sim', 'dependencies': OrderedDict()}
+[0.000599] (webots_sim) JobStarted: {'identifier': 'webots_sim'}
+[0.005787] (webots_sim) JobProgress: {'identifier': 'webots_sim', 'progress': 'cmake'}
+[0.006730] (webots_sim) JobProgress: {'identifier': 'webots_sim', 'progress': 'build'}
+[0.007452] (webots_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim', '--', '-j22', '-l22'], 'cwd': '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jannen'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jannen'), ('OLDPWD', '/home/jannen/Documents/git/Robotics-Simulators/install'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '2429'), ('SYSTEMD_EXEC_PID', '2856'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '39795'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jannen'), ('JOURNAL_STREAM', '8:3017'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jannen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROBOT_NAME', 'foxy'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/jannen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jannen-ThinkPad:@/tmp/.ICE-unix/2834,unix/jannen-ThinkPad:/tmp/.ICE-unix/2834'), ('INVOCATION_ID', '1a703ae9a85a4b82835b2f5d4d7b3053'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fb6e276e-bacc-41d4-913b-6579e501bc4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/jannen/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.030384] (webots_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099846] (-) TimerEvent: {}
+[0.111320] (webots_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.129273] (webots_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.130532] (webots_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.133827] (webots_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.139487] (webots_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.146504] (webots_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.164940] (webots_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.165695] (webots_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199961] (-) TimerEvent: {}
+[0.237979] (webots_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.270793] (webots_sim) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[0.271057] (webots_sim) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[0.271143] (webots_sim) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[0.271208] (webots_sim) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[0.271264] (webots_sim) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[0.271320] (webots_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.271377] (webots_sim) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[0.271432] (webots_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[0.271486] (webots_sim) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.271539] (webots_sim) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.271592] (webots_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[0.287169] (webots_sim) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.300106] (-) TimerEvent: {}
+[0.306237] (webots_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.307451] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.312277] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.313699] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[0.319636] (webots_sim) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[0.319853] (webots_sim) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[0.325997] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[0.326240] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[0.326344] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[0.326407] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[0.326469] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[0.326527] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[0.326585] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[0.326642] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[0.326699] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[0.326755] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[0.326814] (webots_sim) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[0.326869] (webots_sim) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[0.393309] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.393558] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[0.393746] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[0.400151] (-) TimerEvent: {}
+[0.411547] (webots_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.422190] (webots_sim) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.426223] (webots_sim) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.436707] (webots_sim) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.471484] (webots_sim) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.481037] (webots_sim) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.500274] (-) TimerEvent: {}
+[0.506502] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.506768] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[0.520320] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.524479] (webots_sim) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.535694] (webots_sim) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.562885] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.563248] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.563517] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[0.563638] (webots_sim) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.563720] (webots_sim) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.572863] (webots_sim) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[0.573095] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[0.573280] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[0.573480] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.574055] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[0.574306] (webots_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[0.600380] (-) TimerEvent: {}
+[0.607392] (webots_sim) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.618714] (webots_sim) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[0.650919] (webots_sim) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[0.662195] (webots_sim) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[0.689723] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.690141] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.690516] (webots_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.692456] (webots_sim) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[0.692660] (webots_sim) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.700457] (-) TimerEvent: {}
+[0.700662] (webots_sim) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.710774] (webots_sim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.721017] (webots_sim) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.780107] (webots_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.782900] (webots_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[0.784578] (webots_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/jannen/Documents/git/Robotics-Simulators/build/webots_sim\n'}
+[0.800582] (-) TimerEvent: {}
+[0.806014] (webots_sim) CommandEnded: {'returncode': 0}
+[0.806654] (webots_sim) JobProgress: {'identifier': 'webots_sim', 'progress': 'install'}
+[0.812790] (webots_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim'], 'cwd': '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jannen'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jannen'), ('OLDPWD', '/home/jannen/Documents/git/Robotics-Simulators/install'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '2429'), ('SYSTEMD_EXEC_PID', '2856'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '39795'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jannen'), ('JOURNAL_STREAM', '8:3017'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jannen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROBOT_NAME', 'foxy'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/jannen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jannen-ThinkPad:@/tmp/.ICE-unix/2834,unix/jannen-ThinkPad:/tmp/.ICE-unix/2834'), ('INVOCATION_ID', '1a703ae9a85a4b82835b2f5d4d7b3053'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fb6e276e-bacc-41d4-913b-6579e501bc4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jannen/Documents/git/Robotics-Simulators/build/webots_sim'), ('QT_QPA_PLATFORM', 'xcb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/jannen/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.819478] (webots_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.819574] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/lib/webots_sim/robile_controller.py\n'}
+[0.819606] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config\n'}
+[0.819637] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/rviz\n'}
+[0.819721] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/rviz/robile_rolling.rviz\n'}
+[0.819927] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/rviz/robile.rviz\n'}
+[0.819956] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/rviz/robile_foxy_nav.rviz\n'}
+[0.820012] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/doxygen\n'}
+[0.820042] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//config/doxygen/Doxyfile.in\n'}
+[0.820071] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//launch\n'}
+[0.820100] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//launch/robile.launch.py\n'}
+[0.820136] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//launch/gazebo_4_wheel.launch.py\n'}
+[0.820165] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//launch/webots_robile_launch.py\n'}
+[0.820193] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds\n'}
+[0.820221] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/potential_field_gazebo.world\n'}
+[0.820269] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/closed_walls.world\n'}
+[0.820300] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes\n'}
+[0.820330] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing\n'}
+[0.820359] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/lid_cover_green.dae\n'}
+[0.820388] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/wheeled_brick_housing.dae\n'}
+[0.820415] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/lid_cover_red.dae\n'}
+[0.820444] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/lid.dae\n'}
+[0.820471] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/lid_cover_yellow.dae\n'}
+[0.820498] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/lid_cover_blue.dae\n'}
+[0.820526] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/robile_brick_housing/general_brick_housing.dae\n'}
+[0.820579] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/passive_caster_wheel\n'}
+[0.820608] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/passive_caster_wheel/pivot.dae\n'}
+[0.820638] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/passive_caster_wheel/wheel.dae\n'}
+[0.820662] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/sensors\n'}
+[0.820687] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/sensors/sick-lms1xx.dae\n'}
+[0.820711] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/sensors/hokuyo_convex.dae\n'}
+[0.820738] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/sensors/hokuyo.dae\n'}
+[0.820763] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/kelo_drive\n'}
+[0.820787] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/kelo_drive/kelo_drive_base.dae\n'}
+[0.820811] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/meshes/kelo_drive/kelo_drive_wheel.dae\n'}
+[0.820835] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/.robile_world.jpg\n'}
+[0.820859] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/robile_world.wbt\n'}
+[0.820884] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/null_world.wbt\n'}
+[0.820908] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/.null_world.jpg\n'}
+[0.820933] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim//worlds/.null_world.wbproj\n'}
+[0.820959] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/ament_index/resource_index/package_run_dependencies/webots_sim\n'}
+[0.821014] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/ament_index/resource_index/parent_prefix_path/webots_sim\n'}
+[0.821205] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/environment/ament_prefix_path.sh\n'}
+[0.821497] (webots_sim) StdoutLine: {'line': b'-- Installing: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/environment/ament_prefix_path.dsv\n'}
+[0.822068] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/environment/path.sh\n'}
+[0.822257] (webots_sim) StdoutLine: {'line': b'-- Installing: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/environment/path.dsv\n'}
+[0.822338] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/local_setup.bash\n'}
+[0.822406] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/local_setup.sh\n'}
+[0.822468] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/local_setup.zsh\n'}
+[0.822528] (webots_sim) StdoutLine: {'line': b'-- Installing: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/local_setup.dsv\n'}
+[0.822653] (webots_sim) StdoutLine: {'line': b'-- Installing: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/package.dsv\n'}
+[0.822715] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/ament_index/resource_index/packages/webots_sim\n'}
+[0.822775] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.822836] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/cmake/webots_simConfig.cmake\n'}
+[0.822896] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/cmake/webots_simConfig-version.cmake\n'}
+[0.822955] (webots_sim) StdoutLine: {'line': b'-- Up-to-date: /home/jannen/Documents/git/Robotics-Simulators/install/webots_sim/share/webots_sim/package.xml\n'}
+[0.823015] (webots_sim) CommandEnded: {'returncode': 0}
+[0.832826] (webots_sim) JobEnded: {'identifier': 'webots_sim', 'rc': 0}
+[0.833441] (-) EventReactorShutdown: {}

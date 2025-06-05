@@ -1,0 +1,4 @@
+[0.007s] Invoking command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jannen/Documents/git/Robotics-Simulators/src/webots_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo
+[0.013s] [0mCMake Error: The source directory "/home/jannen/Documents/git/Robotics-Simulators/src/webots_sim" does not appear to contain CMakeLists.txt.
+[0.013s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.014s] Invoked command in '/home/jannen/Documents/git/Robotics-Simulators/build/robile_gazebo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jannen/Documents/git/Robotics-Simulators/src/webots_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jannen/Documents/git/Robotics-Simulators/install/robile_gazebo

@@ -1,0 +1,45 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Rosbot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2514789241205988 -0.09545728740180591 0.963143944073281 3.8426011994576488
+  position 0.7366639143853919 0.4144197067185485 0.6761392745251876
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 20 20
+  wallThickness 2
+  wallHeight 10
+}
+Rosbot {
+  hidden position_0_0 -3.888055739275593e-08
+  hidden position_0_1 -1.9377644427532837e-07
+  hidden position_0_2 -3.845331750530517e-08
+  hidden position_0_3 -3.8498879722185106e-08
+  hidden linearVelocity_0 -7.974866449556355e-09 -1.8473416781479656e-14 -8.160039963995051e-13
+  hidden angularVelocity_0 9.178681730714734e-15 2.7796285810791925e-09 -3.5822849401954294e-11
+  hidden rotation_2 0 -1 0 4.2146848510894035e-08
+  hidden linearVelocity_2 -2.4520809214350244e-09 -5.842537045861712e-13 -1.4241686585808248e-10
+  hidden angularVelocity_2 2.898567333166308e-14 2.5592956335701217e-09 2.964497441108708e-11
+  hidden rotation_3 0 -0.9999999999999999 0 1.931411236050088e-07
+  hidden linearVelocity_3 -2.454276364395921e-09 -5.861991870345516e-13 -1.4241641110666462e-10
+  hidden angularVelocity_3 9.151069865516728e-14 2.5591070073373594e-09 -1.0129470992555545e-10
+  hidden rotation_4 0 -1 0 4.2146848510894035e-08
+  hidden linearVelocity_4 -1.3841818600476148e-08 5.849439631312601e-13 1.4364928802024224e-10
+  hidden angularVelocity_4 -3.95468095522937e-14 -3.815138354245056e-07 -1.0127430918939933e-10
+  hidden rotation_5 0 -1 0 4.2146848510894035e-08
+  hidden linearVelocity_5 -1.3857509596888057e-08 5.871512562699463e-13 1.4364712797032553e-10
+  hidden angularVelocity_5 -1.1349421122435439e-13 -3.819691089746812e-07 2.969642556966518e-11
+  translation -1.2862439325439512e-10 -9.677617718868368e-13 -0.0005625852913359874
+  rotation 0.003333083669222602 0.9999912713781515 -0.0025194683491492212 3.178895526034861e-05
+  controller "robile_controller"
+}
