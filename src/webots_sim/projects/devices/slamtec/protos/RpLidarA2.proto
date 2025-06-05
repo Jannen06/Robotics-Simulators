@@ -5,7 +5,7 @@
 # keywords: sensor/lidar
 # Model of the RpLidar A2 rotational lidar developed by Slamtec.
 
-EXTERNPROTO "/home/shafi/ros2_ws/src/robile_gazebo/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "../../../appearances/protos/MattePaint.proto"
 
 PROTO RpLidarA2 [
   field SFVec3f    translation   0 0 0.031

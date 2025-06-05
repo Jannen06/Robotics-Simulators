@@ -8,5 +8,5 @@ orthographicViewHeight: 1
 textFiles: -1
 globalOptionalRendering: ContactPoints
 consoles: Console:All:All
-renderingDevicePerspectives: Rosbot:camera depth;0;0.895833;0;0
-renderingDevicePerspectives: Rosbot:camera rgb;0;0.895833;0;0
+renderingDevicePerspectives: Rosbot:camera depth;1;1;0;0
+renderingDevicePerspectives: Rosbot:camera rgb;1;1;0;0

@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: webots_sim
+Version: 0.0.1
+Summary: webots simulation for rosbot
+Maintainer: jannen
+Maintainer-email: thyman_bathlo@yahoo.com
+License: LGPL-2.1
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

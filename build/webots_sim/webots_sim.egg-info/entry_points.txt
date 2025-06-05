@@ -1,0 +1,2 @@
+[console_scripts]
+planner = webots_sim.obs_avoidance:main

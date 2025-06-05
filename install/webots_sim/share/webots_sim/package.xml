@@ -1,35 +1,46 @@
 <?xml version="1.0"?>
 <package format="2">
-    <name>webots_sim</name>
-    <version>1.0.0</version>
-    <description>webots simulation for rosbot</description>
+  <name>webots_sim</name>
+  <version>0.0.1</version>
+  <description>Webots simulation for ROS2 Robile robot</description>
 
-    <maintainer email="nowak@locomotec.com">Walter Nowak</maintainer>
-    <maintainer email="blumenthal@locomotec.com">Sebastian Blumenthal</maintainer>
+  <maintainer email="thyman_bathlo@yahoo.com">jannen</maintainer>
+  <author email="sushant.chavan@locomotec.com">Sushant Chavan</author>
+  <author email="dharmin.bakaraniya@locomotec.com">Dharmin B.</author>
 
-    <license>LGPL2.1/BSD</license>
+  <license>LGPL-2.1 OR BSD</license>
 
-    <author email="sushant.chavan@locomotec.com">Sushant Chavan</author>
-    <author email="dharmin.bakaraniya@locomotec.com">Dharmin B.</author>
+  <!-- Use ament_python as build tool -->
+  <buildtool_depend>ament_python</buildtool_depend>
 
-    <buildtool_depend>ament_cmake</buildtool_depend>
-    <depend>launch</depend>
-    <depend>launch_ros</depend>
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>webots_ros2</exec_depend> <!-- if you're using Webots ROS2 interface -->
 
-    <depend>robile_description</depend>
-    <depend>robot_state_publisher</depend>
-    <depend>joint_state_publisher</depend>
-    <depend>xacro</depend>
-    <depend>gazebo_ros_pkgs</depend>
-    <depend>geometry_msgs</depend>
-    <depend>nav_msgs</depend>
-    <depend>rclcpp</depend>
-    <depend>sensor_msgs</depend>
-    <depend>tf2</depend>
-    <depend>rviz</depend>
-    <export>
-      <build_type>ament_cmake</build_type>
-    </export>
+  <!-- Launching, simulation, and visualization tools -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz</exec_depend>
 
+  <!-- Optional: Other package dependencies -->
+  <exec_depend>robile_description</exec_depend>
 
+  <!-- Test dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 </package>
+

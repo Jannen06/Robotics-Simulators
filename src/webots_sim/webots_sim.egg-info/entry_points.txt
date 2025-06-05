@@ -1,0 +1,3 @@
+[console_scripts]
+planner = webots_sim.obs_avoidance:main
+robile_controller = webots_sim.robile_controller:main
