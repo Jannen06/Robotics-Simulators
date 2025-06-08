@@ -10,7 +10,7 @@ import time
 
 from std_msgs.msg import Int64
 
-collision_threshold = 0.3
+collision_threshold = 0.8
 battery_threshold = 80
 
 
