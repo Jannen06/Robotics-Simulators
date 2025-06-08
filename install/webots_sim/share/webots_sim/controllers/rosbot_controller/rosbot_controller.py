@@ -32,32 +32,26 @@ class Robile4WDController(Node):
             'wheel_base').get_parameter_value().double_value
         self.get_logger().info(
             f"Robot parameters: Wheel Radius = {self.wheel_radius} m, Wheel Base = {self.wheel_base} m")
-
-        # TF topic
-        # TF2 buffer and listener
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         self.get_logger().info("TF2 listener initialized.")
         self.tf_broadcaster = TransformBroadcaster(self)
         self.static_tf_broadcaster = StaticTransformBroadcaster(self)
 
-        # Lidar
         static_t = TransformStamped()
         static_t.header.stamp = self.get_clock().now().to_msg()
         static_t.header.frame_id = 'base_link'
         static_t.child_frame_id = 'laser'
         static_t.transform.translation.x = 0.0
         static_t.transform.translation.y = 0.0
-        static_t.transform.translation.z = 0.031  # Match LIDAR's vertical offset
+        static_t.transform.translation.z = 0.031 
         static_t.transform.rotation.x = 0.0
         static_t.transform.rotation.y = 0.0
         static_t.transform.rotation.z = 0.0
-        static_t.transform.rotation.w = 1.0  # No rotation
+        static_t.transform.rotation.w = 1.0  
 
         self.static_tf_broadcaster.sendTransform(static_t)
         self.get_logger().info("Static transform from base_link to laser published.")
-
-        # Initial pose
         self.x = 0.0
         self.y = 0.0
         self.theta = 0.0
@@ -67,7 +61,6 @@ class Robile4WDController(Node):
         self.y = 0.0
         self.theta = 0.0
         self.last_time = self.get_clock().now()
-
         self.get_logger().info("Attempting to get all four motors...")
         try:
             self.front_left_motor = self.robot.getDevice(
@@ -78,7 +71,6 @@ class Robile4WDController(Node):
                 'rear left wheel motor')
             self.rear_right_motor = self.robot.getDevice(
                 'rear right wheel motor')
-
             if None in [self.front_left_motor, self.front_right_motor, self.rear_left_motor, self.rear_right_motor]:
                 raise ValueError(
                     "One or more motors were not found. Check your Webots robot PROTO names.")
@@ -86,7 +78,6 @@ class Robile4WDController(Node):
             self.motors = [self.front_left_motor, self.front_right_motor,
                            self.rear_left_motor, self.rear_right_motor]
             self.get_logger().info("All four motors found successfully.")
-
         except ValueError as e:
             self.get_logger().error(
                 f"Error initializing motors: {e}. Exiting.")
@@ -95,12 +86,10 @@ class Robile4WDController(Node):
             self.get_logger().error(
                 f"An unexpected error occurred while getting motors: {e}. Exiting.")
             sys.exit(1)
-
         for motor in self.motors:
             motor.setPosition(float('inf'))
             motor.setVelocity(0.0)
         self.get_logger().info("All motors initialized to 0.0 velocity.")
-
         try:
             self.lidar = self.robot.getDevice('lidar')
             self.lidar.enable(self.timestep)
@@ -111,7 +100,6 @@ class Robile4WDController(Node):
             self.max_range = self.lidar.getMaxRange()
             self.get_logger().info(
                 f"LiDAR initialized: resolution={self.lidar_resolution}, fov={math.degrees(self.fov):.2f}°, range=({self.min_range}, {self.max_range})")
-
             self.lidar_pub = self.create_publisher(LaserScan, '/scan', 10)
         except Exception as e:
             self.get_logger().error(f"Failed to initialize LiDAR: {e}")
@@ -127,34 +115,27 @@ class Robile4WDController(Node):
             10
         )
         self.get_logger().info("Subscribed to /cmd_vel topic.")
-
     def cmd_vel_callback(self, msg):
         self.linear_velocity = msg.linear.x
         self.angular_velocity = msg.angular.z
         self.get_logger().info(
             f"Received cmd_vel: linear_x={self.linear_velocity:.2f}, angular_z={self.angular_velocity:.2f}")
-
     def run(self):
         self.get_logger().info("Starting robot control loop...")
         while True:
-            # Step Webots simulation
             step_result = self.robot.step(self.timestep)
 
             if step_result == -1 or not rclpy.ok():
                 self.get_logger().info("Simulation or ROS 2 context ended. Exiting control loop.")
                 break
 
-            # --- PROCESS ROS 2 MESSAGES FIRST ---
-            # This allows cmd_vel_callback to update self.linear_velocity/angular_velocity
-            # BEFORE we calculate odometry and motor commands for this timestep.
+            
             rclpy.spin_once(self, timeout_sec=0.0)
 
             current_time = self.get_clock().now()
-            # Calculate dt based on time since last iteration
             dt = (current_time - self.last_time).nanoseconds / 1e9
-            self.last_time = current_time  # Update last_time for the next iteration
+            self.last_time = current_time  
 
-            # --- NEW LOG PLACEMENT (after cmd_vel update, before calculation) ---
             self.get_logger().info(
                 f"Controller State: "
                 f"cmd_vel_input: linear_x={self.linear_velocity:.3f}, angular_z={self.angular_velocity:.3f} | "
@@ -163,9 +144,7 @@ class Robile4WDController(Node):
             self.get_logger().info(
                 f"Motors receiving: linear_vel={self.linear_velocity:.3f}, angular_vel={self.angular_velocity:.3f}"
             )
-            # --- END NEW LOG PLACEMENT ---
-
-            # Calculate wheel velocities for Webots motors
+            
             v_l = (self.linear_velocity - self.angular_velocity *
                    self.wheel_base / 2.0) / self.wheel_radius
             v_r = (self.linear_velocity + self.angular_velocity *
@@ -192,20 +171,14 @@ class Robile4WDController(Node):
 
             self.lidar_pub.publish(scan_msg)
 
-            # --- Odometry calculation based on current velocities and dt ---
-            delta_s = self.linear_velocity * dt  # Distance moved in this time step
-
-            # Update orientation first (since delta_theta depends only on angular_velocity)
-            # Store initial theta for this step's calculation
+            delta_s = self.linear_velocity * dt  
+           
             current_theta_for_odom = self.theta
 
-            self.theta += self.angular_velocity * dt  # Update theta
-
-            # Handle linear movement for x, y
-            # Only update x, y if there's significant linear movement
+            self.theta += self.angular_velocity * dt  
+            
             if abs(self.linear_velocity) > 1e-6:
-                # Use the average orientation during the step for linear displacement
-                # This makes the odometry more accurate for curved paths
+               
                 avg_theta = current_theta_for_odom + \
                     (self.angular_velocity * dt / 2.0)
 
@@ -214,16 +187,14 @@ class Robile4WDController(Node):
 
                 self.x += delta_x
                 self.y += delta_y
-            # If linear_velocity is 0, delta_x and delta_y remain 0, and x,y don't change, which is correct for pure rotation.
-
-            # Normalize theta to [-pi, pi] - IMPORTANT to do after adding delta_theta
+           
             self.theta = (self.theta + math.pi) % (2 * math.pi) - math.pi
             if self.theta > math.pi:
                 self.theta -= 2 * math.pi
-            elif self.theta < -math.pi:  # Also handle negative wrap-around
+            elif self.theta < -math.pi:  
                 self.theta += 2 * math.pi
 
-            # Publish odom -> base_link TF
+           
             odom_transform = TransformStamped()
             odom_transform.header.stamp = current_time.to_msg()
             odom_transform.header.frame_id = 'odom'
@@ -232,8 +203,7 @@ class Robile4WDController(Node):
             odom_transform.transform.translation.y = self.y
             odom_transform.transform.translation.z = 0.0
 
-            # Convert yaw (theta) to quaternion
-            # For yaw only, qz = sin(yaw/2), qw = cos(yaw/2)
+        
             qz = math.sin(self.theta / 2.0)
             qw = math.cos(self.theta / 2.0)
             odom_transform.transform.rotation.x = 0.0
@@ -243,25 +213,21 @@ class Robile4WDController(Node):
 
             self.tf_broadcaster.sendTransform(odom_transform)
 
-            # Publish base_link -> laser TF (static transform, but published repeatedly)
-            # This can also be published once as a static transform if it never changes
-            # but repeatedly publishing it within the loop is fine too.
-
-            ###############################################################
-            # t2 = TransformStamped()
-            # t2.header.stamp = current_time.to_msg()
-            # t2.header.frame_id = 'base_link'
-            # t2.child_frame_id = 'laser'
-            # t2.transform.translation.x = 0.0
-            # t2.transform.translation.y = 0.0
-            # t2.transform.translation.z = 0.031
-            # t2.transform.rotation.x = 0.0
-            # t2.transform.rotation.y = 0.0
-            # t2.transform.rotation.z = 0.0
-            # t2.transform.rotation.w = 1.0
-            # self.tf_broadcaster.sendTransform(t2)
-            ###############################################################
-            # Publish Odometry message
+            
+            ##############################################################
+            t2 = TransformStamped()
+            t2.header.stamp = current_time.to_msg()
+            t2.header.frame_id = 'base_link'
+            t2.child_frame_id = 'laser'
+            t2.transform.translation.x = 0.0
+            t2.transform.translation.y = 0.0
+            t2.transform.translation.z = 0.031
+            t2.transform.rotation.x = 0.0
+            t2.transform.rotation.y = 0.0
+            t2.transform.rotation.z = 0.0
+            t2.transform.rotation.w = 1.0
+            self.tf_broadcaster.sendTransform(t2)
+            ##############################################################
             odom = Odometry()
             odom.header.stamp = current_time.to_msg()
             odom.header.frame_id = 'odom'
@@ -274,7 +240,6 @@ class Robile4WDController(Node):
             odom.pose.pose.orientation.z = qz
             odom.pose.pose.orientation.w = qw
 
-            # Set the twist values based on the commanded velocities
             odom.twist.twist.linear.x = self.linear_velocity
             odom.twist.twist.angular.z = self.angular_velocity
             self.odom_pub.publish(odom)

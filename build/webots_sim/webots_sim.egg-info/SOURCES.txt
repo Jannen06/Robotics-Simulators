@@ -16,7 +16,7 @@ config/rviz/robile_rolling.rviz
 controllers/robile_controller/robile_controller.py
 controllers/rosbot_controller/rosbot_controller.py
 launch/gazebo_4_wheel.launch.py
-launch/robile.launch.py
+launch/rosbot.launch.py
 launch/webots_robile_launch.py
 projects/.gitattributes
 projects/Makefile
