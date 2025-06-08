@@ -248,18 +248,18 @@ class Robile4WDController(Node):
             # but repeatedly publishing it within the loop is fine too.
 
             ###############################################################
-            # t2 = TransformStamped()
-            # t2.header.stamp = current_time.to_msg()
-            # t2.header.frame_id = 'base_link'
-            # t2.child_frame_id = 'laser'
-            # t2.transform.translation.x = 0.0
-            # t2.transform.translation.y = 0.0
-            # t2.transform.translation.z = 0.031
-            # t2.transform.rotation.x = 0.0
-            # t2.transform.rotation.y = 0.0
-            # t2.transform.rotation.z = 0.0
-            # t2.transform.rotation.w = 1.0
-            # self.tf_broadcaster.sendTransform(t2)
+            t2 = TransformStamped()
+            t2.header.stamp = current_time.to_msg()
+            t2.header.frame_id = 'base_link'
+            t2.child_frame_id = 'laser'
+            t2.transform.translation.x = 0.0
+            t2.transform.translation.y = 0.0
+            t2.transform.translation.z = 0.031
+            t2.transform.rotation.x = 0.0
+            t2.transform.rotation.y = 0.0
+            t2.transform.rotation.z = 0.0
+            t2.transform.rotation.w = 1.0
+            self.tf_broadcaster.sendTransform(t2)
             ###############################################################
             # Publish Odometry message
             odom = Odometry()
