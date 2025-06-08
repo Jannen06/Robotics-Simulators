@@ -1,5 +1,6 @@
 README.md
 package.xml
+setup.cfg
 setup.py
 ../../build/webots_sim/webots_sim.egg-info/PKG-INFO
 ../../build/webots_sim/webots_sim.egg-info/SOURCES.txt
@@ -13,6 +14,7 @@ config/rviz/robile.rviz
 config/rviz/robile_foxy_nav.rviz
 config/rviz/robile_rolling.rviz
 controllers/robile_controller/robile_controller.py
+controllers/rosbot_controller/rosbot_controller.py
 launch/gazebo_4_wheel.launch.py
 launch/robile.launch.py
 launch/webots_robile_launch.py
@@ -3446,14 +3448,20 @@ protos/meshes/screw.obj
 protos/meshes/wheel_rim.obj
 protos/meshes/wheel_tire.obj
 resource/webots_sim
+src/webots_sim/__init__.py
+src/webots_sim/featured_state_machine.py
+src/webots_sim/obs_avoidance.py
+src/webots_sim/path_planning.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 worlds/.null_world.jpg
 worlds/.null_world.wbproj
+worlds/.null_world_new.jpg
 worlds/.robile_world.jpg
 worlds/closed_walls.world
 worlds/null_world.wbt
+worlds/null_world_new.wbt
 worlds/potential_field_gazebo.world
 worlds/robile_world.wbt
 worlds/meshes/kelo_drive/kelo_drive_base.dae

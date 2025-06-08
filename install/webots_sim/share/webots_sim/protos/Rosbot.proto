@@ -442,7 +442,7 @@ PROTO Rosbot [
         device [
           RotationalMotor {
             name "front left wheel motor"
-            maxVelocity 26.0
+            maxVelocity 6.28  # ~1 rotation/sec if wheel radius is 0.1 m (≈0.6 m/s linear)
             maxTorque 100.0
           }
           PositionSensor {
@@ -495,7 +495,7 @@ PROTO Rosbot [
             ]
           }
           physics DEF WHEEL_PHYSICS Physics {
-            density -1
+            density 1
             mass 0.500000
           }
         }
@@ -715,8 +715,9 @@ PROTO Rosbot [
       ]
     }
     physics Physics {
-      density -1
-      mass 0.450000
+      mass 4.0
+      centerOfMass [0 0 0.05]  # optional fine-tuning
+      inertiaMatrix [0.02 0.02 0.02 0 0 0]  # estimate or tune for stability
     }
   }
 }

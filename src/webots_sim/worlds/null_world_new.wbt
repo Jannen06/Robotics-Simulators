@@ -1,0 +1,88 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/chairs/protos/Chair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "../protos/Robile.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3753627013218361 0.6595474275126997 0.6512296317872478 1.547176685741728
+  position -0.4563136698660975 -12.792924036293346 12.94210563749583
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Cabinet {
+  hidden translation_7 -5.09802353939707e-06 -6.530101459567561e-11 0
+  hidden rotation_7 0 0 1 2.5618212230633696e-05
+  hidden translation_11 -3.6839740106321514e-06 4.011721510543964e-11 0
+  hidden rotation_11 0 0 -1 2.177934063858033e-05
+  hidden translation_15 0 0 0
+  hidden translation_23 0.0004244721983560318 0 0
+  hidden translation_31 0.00041002655987470743 0 0
+  hidden translation_39 -0.00035885937370761954 0 0
+  translation 3 0 0
+}
+RectangleArena {
+  floorSize 15 15
+  wallThickness 1
+  wallHeight 4
+}
+Sofa {
+  translation 3 -3 0
+  rotation 0 0 1 -3.1331853071795863
+}
+Chair {
+  translation 2 2 0
+}
+Pedestrian {
+  translation -3 -1 1.27
+}
+Robile {
+  hidden translation_4 0.2330099249236517 0.11650015951499196 0.0489219808949857
+  hidden rotation_4 0.3374001679096825 -0.8767626706326299 -0.3427073767511531 1.1652856868086588e-05
+  hidden linearVelocity_4 8.185055394058517e-17 -2.6404989306172413e-16 -7.457856554538012e-15
+  hidden angularVelocity_4 -3.880824734393396e-15 1.8596260862467044e-11 6.016096390458025e-17
+  hidden position_5_0 4434.930363109631
+  hidden position_5_1 4434.894783501934
+  hidden translation_6 -0.0033108146068229405 0 0.009100425614285087
+  hidden rotation_6 0 -1 0 0.9984637591571635
+  hidden linearVelocity_6 5.967091585264855e-08 1.698935011450179e-13 -4.385976108108375e-08
+  hidden angularVelocity_6 2.420072686178122e-11 6.556384544895653e-06 6.335041426369714e-11
+  hidden translation_7 -0.003584932346278505 6.938893903907228e-18 0.00933355440685035
+  hidden rotation_7 0 -1 0 1.0340433668536544
+  hidden linearVelocity_7 5.880653497867829e-08 -2.877635787849073e-13 -4.041799102225393e-08
+  hidden angularVelocity_7 2.3092526815442353e-11 6.299942679695771e-06 -1.6935624277134326e-11
+  hidden translation_8 0.2331101384602294 -0.11650003210359923 0.0491555884356686
+  hidden rotation_8 0.023769172955783496 -0.9392074182686707 -0.3425265710658024 1.5736112263458966e-05
+  hidden linearVelocity_8 -1.906099320334785e-12 -1.1911416297749612e-15 1.9273912888214302e-09
+  hidden angularVelocity_8 -1.1588724665182504e-13 -6.736822531731694e-14 -2.6772964832286477e-15
+  hidden position_9_0 4442.328499018125
+  hidden position_9_1 4442.320208216559
+  hidden translation_10 -0.00024332548332962715 -2.0816681711721685e-17 -0.0011519756143254338
+  hidden rotation_10 0 -1 0 6.166698465022623
+  hidden linearVelocity_10 -5.966872638962373e-09 1.5452188781856072e-13 -4.763768924928931e-08
+  hidden angularVelocity_10 -8.515832587446859e-12 5.177396993740171e-06 1.9150554871103376e-11
+  hidden translation_11 -0.00022154978731838207 6.938893903907228e-18 -0.0010709976334818633
+  hidden rotation_11 0 -1 0 6.174989266588257
+  hidden linearVelocity_11 -5.657422726813774e-09 -7.075713463176648e-14 -4.873148745957747e-08
+  hidden angularVelocity_11 6.786311762243165e-11 5.280004724039784e-06 -1.6158109536949825e-11
+  hidden translation_16 -6.905001917467679e-09 6.938893903907228e-18 -2.9913156255268916e-07
+  hidden rotation_16 0 0.9999999999999999 0 2.991317458042243e-05
+  hidden translation_17 -6.905010839150516e-09 -6.938893903907228e-18 -2.990978061192245e-07
+  hidden rotation_17 0 0.9999999999999999 0 2.9909789514457163e-05
+  hidden translation_20 -6.9050005921389435e-09 0 -2.990872670160661e-07
+  hidden rotation_20 0 1 0 2.990873531480946e-05
+  hidden translation_21 -6.905012017027756e-09 0 -2.991373186501507e-07
+  hidden rotation_21 0 1 0 2.9913738720841642e-05
+  controller "robile_controller"
+  supervisor TRUE
+  selfCollision TRUE
+}

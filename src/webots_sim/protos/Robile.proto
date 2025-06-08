@@ -58,7 +58,7 @@ PROTO Robile [
                   # The axis of rotation for the wheel (y-axis for rolling)
                   axis 0 1 0
                   # Anchor point relative to the parent Solid (robile_1_drive_pivot_link)
-                  anchor -0.010000 0.039326 0.001514
+                  anchor 0.0 0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -88,7 +88,7 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
+          
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -102,7 +102,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 -0.039326 0.001514
+                  anchor 0.0 -0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -130,7 +130,6 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -151,7 +150,6 @@ PROTO Robile [
               ]
             }
             physics Physics {
-              density -1
               mass 10.000000
               centerOfMass [ 0.000000 0.000000 0.000000 ]
               inertiaMatrix [
@@ -171,7 +169,6 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -193,7 +190,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 0.039326 0.001514
+                  anchor 0.0 0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -221,7 +218,6 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -235,7 +231,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 -0.039326 0.001514
+                  anchor 0.0 -0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -263,7 +259,7 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
+          
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -284,7 +280,7 @@ PROTO Robile [
               ]
             }
             physics Physics {
-              density -1
+    
               mass 10.000000
               centerOfMass [ 0.000000 0.000000 0.000000 ]
               inertiaMatrix [
@@ -304,7 +300,7 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
+
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -334,7 +330,6 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -362,7 +357,6 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -384,7 +378,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 0.039326 0.001514
+                  anchor 0.0 0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -412,7 +406,6 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -426,7 +419,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 -0.039326 0.001514
+                  anchor 0.0 -0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -454,7 +447,7 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
+          
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -475,7 +468,7 @@ PROTO Robile [
               ]
             }
             physics Physics {
-              density -1
+    
               mass 10.000000
               centerOfMass [ 0.000000 0.000000 0.000000 ]
               inertiaMatrix [
@@ -495,7 +488,7 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
+
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -517,7 +510,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 0.039326 0.001514
+                  anchor 0.0 0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -545,7 +538,7 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
+          
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -559,7 +552,7 @@ PROTO Robile [
               HingeJoint {
                 jointParameters HingeJointParameters {
                   axis 0 1 0
-                  anchor -0.010000 -0.039326 0.001514
+                  anchor 0.0 -0.039326 0.0
                 }
                 device [
                   RotationalMotor {
@@ -587,7 +580,7 @@ PROTO Robile [
                     ]
                   }
                   physics Physics {
-                    density -1
+          
                     mass 10.000000
                     centerOfMass [ 0.000000 0.000000 0.000000 ]
                     inertiaMatrix [
@@ -608,7 +601,7 @@ PROTO Robile [
               ]
             }
             physics Physics {
-              density -1
+    
               mass 10.000000
               centerOfMass [ 0.000000 0.000000 0.000000 ]
               inertiaMatrix [
@@ -628,7 +621,7 @@ PROTO Robile [
           ]
         }
         physics Physics {
-          density -1
+
           mass 5.000000
           centerOfMass [ 0.000500 0.000100 0.119000 ]
           inertiaMatrix [
@@ -653,7 +646,7 @@ PROTO Robile [
         ]
         name "base_laser_front_link"
         physics Physics {
-          density -1
+
           mass 0.160000
           centerOfMass [ 0.000000 0.000000 0.000000 ]
           inertiaMatrix [
@@ -663,6 +656,5 @@ PROTO Robile [
         }
       }
     ]
-    name IS name
   }
 }

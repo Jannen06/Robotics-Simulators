@@ -4,9 +4,9 @@
   <version>0.0.1</version>
   <description>Webots simulation for ROS2 Robile robot</description>
 
-  <maintainer email="thyman_bathlo@yahoo.com">jannen</maintainer>
-  <author email="sushant.chavan@locomotec.com">Sushant Chavan</author>
-  <author email="dharmin.bakaraniya@locomotec.com">Dharmin B.</author>
+  <maintainer email="thyman_bathlo@yahoo.com">Jannen</maintainer>
+
+
 
   <license>LGPL-2.1 OR BSD</license>
 
@@ -41,6 +41,10 @@
 
   <export>
     <build_type>ament_python</build_type>
+    <buildtool_depend>ament_cmake</buildtool_depend>
+    <buildtool_depend>ament_python</buildtool_depend>
+    <exec_depend>python3</exec_depend>
+
   </export>
 </package>
 

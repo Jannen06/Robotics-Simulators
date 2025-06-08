@@ -36,6 +36,8 @@ setup(
     entry_points={
         'console_scripts': [
             'planner = webots_sim.obs_avoidance:main',
+            'state_machine = webots_sim.featured_state_machine:main',
+
         ],
     },
 )
