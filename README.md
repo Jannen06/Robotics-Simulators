@@ -4,7 +4,7 @@ An investigation of simulators and hands-on
 
 # Webots Simulator
 
-[ROSBOT](doc/figures/webot_simulator.png)
+![ROSBOT](/src/doc/figures/webot_simulator.png)
 
 ## Installation
 In addition to a few ROS dependencies, this package also depends on the following packages provided by webots:
@@ -53,8 +53,6 @@ There is no fixed goal been set. It navigates through the rooms and avoid abosac
 ros2 run webots_sim state_machine
 ~~~
 
-
-### Adding laser scanner to URDF
 
 ### Moving the robot using a keyboard
 
