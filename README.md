@@ -4,7 +4,7 @@ An investigation of simulators and hands-on
 
 # Webots Simulator
 
-![ROSBOT](doc/figures/webot_simulator.png)
+[ROSBOT](doc/figures/webot_simulator.png)
 
 ## Installation
 In addition to a few ROS dependencies, this package also depends on the following packages provided by webots:
