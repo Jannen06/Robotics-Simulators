@@ -11,46 +11,118 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/RoundTable.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/fridge/protos/Fridge.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.18003840311210356 0.7039034241389192 0.6870998056253173 0.9079569190033715
-  position -9.9642217262049 -7.044637376953864 11.960773705432581
+  orientation 0.06433957055353552 -0.899035776432193 -0.4331224911684347 5.613740150788883
+  position -7.589598574850292 1.1889045090871044 2.627239636464098
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Cabinet {
-  hidden position_6_0 6.406136652234807e-06
-  hidden translation_7 -5.099284774463052e-06 -6.533329433011659e-11 0
-  hidden rotation_7 0 0 1 2.5624538688862076e-05
-  hidden linearVelocity_7 8.428024622580687e-20 2.8033982710658928e-21 -2.1983642653351165e-15
-  hidden angularVelocity_7 -3.929720357647376e-20 -5.4714789494123985e-18 -3.739629527259886e-19
-  hidden position_10_0 -5.446180061485749e-06
-  hidden translation_11 -3.684885429325207e-06 4.0137060342004816e-11 0
-  hidden rotation_11 0 0 -1 2.1784723035974595e-05
-  hidden linearVelocity_11 -1.7181010393544453e-19 3.4695104817645297e-16 -2.198364265335117e-15
-  hidden angularVelocity_11 -3.129869842378093e-20 4.773366674350462e-18 -8.968731126085995e-19
-  hidden translation_15 0 0 0
-  hidden linearVelocity_15 0 0 -1.720665652002837e-15
-  hidden translation_23 0.0004244721983560318 0 0
-  hidden linearVelocity_23 0 0 -6.759757918582574e-16
-  hidden translation_31 0.00041002655987470743 0 0
-  hidden linearVelocity_31 0 0 -6.759757918582574e-16
-  hidden translation_39 -0.00035885937370761954 0 0
-  hidden linearVelocity_39 0 0 -3.543485851063358e-16
-  translation 3 0 0
+  hidden position_6_0 2.5624541591235123e-05
+  hidden translation_7 -8.923747354891395e-06 -2.0008333878607232e-10 0
+  hidden rotation_7 0 0 1 4.484289999851515e-05
+  hidden linearVelocity_7 -6.354188464339601e-19 3.4692532650285314e-16 -2.3867954880781266e-15
+  hidden angularVelocity_7 2.1368721963257916e-20 2.977000340777812e-18 -2.8193685654624607e-18
+  hidden position_10_0 -2.1784715980297538e-05
+  hidden translation_11 -6.448548778721706e-06 1.229181756379205e-10 0
+  hidden rotation_11 0 0 -1 3.812242440837099e-05
+  hidden linearVelocity_11 1.2414414378321589e-20 -4.991270940079849e-22 -2.5124163032401335e-15
+  hidden angularVelocity_11 -1.7696745990199178e-21 2.700390904023977e-19 -6.512052715621077e-20
+  hidden translation_15 0.1915104003193746 0 0
+  hidden linearVelocity_15 -6.309513059341184e-22 -2.377727362052856e-16 -1.720665652002837e-15
+  hidden translation_23 0.18854568836672048 0 0
+  hidden linearVelocity_23 -1.184526297058884e-22 -4.463863631153407e-17 -6.759757918582574e-16
+  hidden translation_31 0.19192895019120604 0 0
+  hidden linearVelocity_31 -2.7911946158447244e-22 -1.0518561018085275e-16 -6.759757918582574e-16
+  hidden translation_39 0.04376015153829815 0 0
+  hidden linearVelocity_39 -2.809597479334366e-26 -1.0587911840641475e-20 -3.543485851063358e-16
+  translation 7.34 -1.15165e-05 0
+  rotation 0 0 1 3.14159
 }
 RectangleArena {
+  translation 0 -0.39 0
   rotation 0 1 0 4.692820414042842e-06
   floorSize 15 15
-  wallThickness 1
-  wallHeight 4
+  wallThickness 0.5
+  wallHeight 2.5
+}
+Fridge {
+  hidden position_0_0 -0.0001757720434579567
+  hidden position_0_1 0.0001757720537380719
+  hidden translation_1 0.36 0.34 1.55
+  hidden rotation_1 0 0 -1 0.0001757720434614145
+  hidden linearVelocity_1 -3.2908193500807074e-18 -1.1102231956077312e-14 -2.3874235921539368e-15
+  hidden angularVelocity_1 2.731831205470341e-20 -4.770148597152744e-18 9.455989987982978e-18
+  hidden translation_2 0.36 0.34 0.65
+  hidden rotation_2 0 0 1 0.00017577205356744018
+  hidden linearVelocity_2 7.8175783548180525e-19 -1.1102230047391944e-14 -1.5916157281026244e-15
+  hidden angularVelocity_2 9.493870952898412e-22 5.457083091650436e-20 -2.208707858400895e-18
+  translation 6.73 -5.02 0
+  rotation 0 0 1 3.14159
+}
+Desk {
+  translation -4.65 4.6 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Chair {
+  translation 4.08 -3.12 0
+  rotation 0 0 1 -1.5707853071795865
+  name "chair(2)"
+}
+Chair {
+  translation 4.08 -5.63 0
+  rotation 0 0 -1 -1.5708053071795867
+  name "chair(1)"
+}
+RoundTable {
+  translation 4.21 -4.3 0
 }
 Wall {
-  translation 4.26 1.81 0
+  translation -4.77 -2.06 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(5)"
+  size 0.2 6 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 4.48 -0.91 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(4)"
+  size 0.2 7 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 1 -6.26 0
+  name "wall(3)"
+  size 0.2 4 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 1 -0.91 0
+  name "wall(2)"
   size 0.2 5 2.4
   appearance Roughcast {
     colorOverride 1 0.5 0.5
@@ -59,43 +131,64 @@ Wall {
     }
   }
 }
+Wall {
+  translation 1 5.06 0
+  name "wall(1)"
+  size 0.2 5 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -1.66 3.49 0
+  size 0.2 8 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
 Table {
-  translation 2.5 2 0
+  translation 4.41 2 0
 }
 Sofa {
-  translation 3 -3 0
-  rotation 0 0 1 -3.1331853071795863
+  translation -4.55345 0.936703 0
+  rotation 0 0 1 1.5792
 }
 Chair {
-  translation 2 2 0
+  translation 3.59 2 0
 }
 Pedestrian {
-  translation -3 -1 1.27
+  translation -4.1 2.86 1.27
 }
 Rosbot {
-  hidden position_0_0 0.00040329924073133155
-  hidden position_0_1 0.00018978152080494716
-  hidden position_0_2 0.00038404189875638497
-  hidden position_0_3 0.001237828271171695
-  hidden linearVelocity_0 3.695868595130693e-10 5.435031686071038e-14 -1.7053025658242404e-15
-  hidden angularVelocity_0 -1.2430327253895856e-15 1.02289500953502e-15 -2.0568743164133923e-12
+  hidden position_0_0 -0.19633341926794598
+  hidden position_0_1 -0.19435322650454281
+  hidden position_0_2 -0.1970223783382007
+  hidden position_0_3 -0.19822164269103845
+  hidden linearVelocity_0 3.695827729208936e-10 -5.236197523552443e-14 -1.7053025658242406e-15
+  hidden angularVelocity_0 3.1465142081894435e-16 -5.443992333171199e-15 2.1211625521417694e-12
   hidden translation_2 0.05 0.11 0.043
-  hidden rotation_2 0 -1 0 0.9844622348202378
-  hidden linearVelocity_2 3.697937789569707e-10 -3.927759204934509e-14 -2.140492326741199e-15
-  hidden angularVelocity_2 -1.4018686874108709e-12 3.1622796205444065e-11 -2.056795592028184e-12
+  hidden rotation_2 0 -1 0 1.1811989533288878
+  hidden linearVelocity_2 3.6938432846425536e-10 6.236688845275492e-14 -1.3073954960046155e-15
+  hidden angularVelocity_2 1.4267841236395523e-12 3.1578408818331784e-11 2.121093963980134e-12
   hidden translation_3 0.05 -0.11 0.043
-  hidden rotation_3 0 -1 0 3.9160248258930395
-  hidden linearVelocity_3 3.693888565068497e-10 -5.774145961566538e-14 -1.792592421146822e-15
-  hidden angularVelocity_3 -1.3713794806331636e-12 3.1588917442568575e-11 -2.0566511029652934e-12
+  hidden rotation_3 0 -0.9999999999999999 0 4.110567833918387
+  hidden linearVelocity_3 3.698017161827027e-10 3.5752387129426085e-14 -1.421079096937171e-15
+  hidden angularVelocity_3 1.4321452966256017e-12 3.1614843920083534e-11 2.1212382008202608e-12
   hidden translation_4 -0.055 0.11 0.043
-  hidden rotation_4 0 -1 0 0.9848824068089305
-  hidden linearVelocity_4 3.6978431409559544e-10 1.7596781836497268e-13 -2.032470779892324e-15
-  hidden angularVelocity_4 -1.3789611394066e-12 3.162323390002735e-11 -2.0567870697809662e-12
+  hidden rotation_4 0 -1 0 1.1822888270458667
+  hidden linearVelocity_4 3.6936598971538293e-10 -1.5952911537326358e-13 -1.4210988616320244e-15
+  hidden angularVelocity_4 1.4236576399173324e-12 3.157780281890949e-11 2.121198814552356e-12
   hidden translation_5 -0.055 -0.11 0.043
-  hidden rotation_5 0 -1 0 3.9429453241951324
-  hidden linearVelocity_5 3.693794836917486e-10 1.5801467543578241e-13 -1.7022743510324767e-15
-  hidden angularVelocity_5 -1.3600949915407857e-12 3.158970778356862e-11 -2.0569078382078262e-12
-  translation -0.004177896956431718 -0.004945236217246793 -0.0012748153594649425
-  rotation -0.0003776272986623971 0.017552849125830522 0.9998458655638823 0.04354675052420881
+  hidden rotation_5 0 -1 0 4.142404795157352
+  hidden linearVelocity_5 3.6979258902525645e-10 -1.8490844675925338e-13 -2.216881106041867e-15
+  hidden angularVelocity_5 1.4476975904430155e-12 3.161301687259767e-11 2.1210728122390374e-12
+  translation -4.425025090757584 2.1991919382338083 -0.0012540692020219998
+  rotation 0.00037728353997231134 0.01690217727220537 -0.9998570768167766 0.04522259994814621
   controller "rosbot_controller"
 }
