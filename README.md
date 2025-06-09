@@ -4,24 +4,24 @@ An investigation of simulators and hands-on
 
 # Webots Simulator
 
-![ROSBOT](/src/doc/figures/webot_simulator.png)
+![ROSBOT](/src/webots_sim/doc/figures/webot_simulator.png)
 
 ## Installation
 In addition to a few ROS dependencies, this package also depends on the following packages provided by webots:
 1. [webots env](https://cyberbotics.com/#download) 
-2. other dependencies
+2. Other dependencies
 ```
 sudo apt update
 sudo apt install libgl1 libglu1-mesa libxi6 libxmu6 libpng16-16 libjpeg8 libsqlite3-0
 ```
-3. Navigate to downoad folder and install
+3. Navigate to download folder and install
 ```
 cd ~/Downloads
 sudo dpkg -i webots*.deb
 ```
 
 
-Assuming you have ROS2 humble installed and working you can move forward.
+Assuming you have ROS2 Humble installed and working, you can move forward.
 
 
 
