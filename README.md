@@ -4,7 +4,7 @@ An investigation of simulators and hands-on
 
 # Webots Simulator
 
-![ROSBOT](/src/webots_sim/doc/figures/webot_simulator.png)
+![ROSBOT](src/webots_sim/doc/figures/rosbot.png)
 
 ## Installation
 In addition to a few ROS dependencies, this package also depends on the following packages provided by webots:
@@ -94,4 +94,8 @@ CTRL-C to quit
 
 currently:	speed 0.5	turn 1.0 
 ~~~
+
+# Simulator overview
+
+![webots](src/webots_sim/doc/figures/webot_simulator.png)
 
